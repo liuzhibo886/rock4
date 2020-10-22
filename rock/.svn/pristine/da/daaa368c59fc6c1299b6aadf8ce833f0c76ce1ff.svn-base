@@ -1,0 +1,24 @@
+######WEB项目配置######################################################################################
+#静态文件路径
+spring.mvc.static-path-pattern=/static/**
+spring.mvc.view.prefix=/WEB-INF/view
+#json方式
+spring.http.converters.preferred-json-mapper=fastjson
+###最大请求大小
+spring.http.multipart.max-request-size=100MB
+#最大文件大小
+spring.http.multipart.max-file-size=100MB
+######beetl项目配置#####################
+#开始结束标签
+beetl.delimiter-statement-start=@
+beetl.delimiter-statement-end=null
+ #自定义标签文件Root目录和后缀
+beetl.resource-tagroot=common/tags
+beetl.resource-tagsuffix=tag
+#是否检测文件变化,开发用true合适，但线上要改为false
+beetl.resource-auto-check=true
+#禁用BeetlSQL
+beetlsql.enabled=true
+#默认为true，集成beetl
+beetl.enabled=true
+  
